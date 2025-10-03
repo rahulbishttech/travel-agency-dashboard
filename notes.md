@@ -1,4 +1,4 @@
-### build for business to pland and manage trips for thier clients integrating ai and stripe payment method
+### build for business to plan and manage trips for thier clients integrating ai and stripe payment method
 
 ## tech stack used : react, react router v7, tailwind v4 , Syncfusion, appwrite,typescript for type safe code , free gemini ai for dynamic trip generation, stripe integation for secure payments, sentary
 
@@ -8,9 +8,15 @@
 3. run `npm install clsx tailwind-merge`  (*1)
 4. download public, app folder from assests.
    app : index.d.ts = for types, app.css = for fonts, prefined classes etc..
-   lib : for utitlities
+   lib : for utilities
    public : for images ,icons
-5. 
+5. git push then Syncfusion setup (commmand given in desc link)
+  - in vite.config.ts (*1)
+    ssr: {
+        noExternal: [/@syncfusion/]
+    }  
+  - get the license key and put it in .env.local and then import it on root.tsx (above layout)
+6. 
 
 
 
