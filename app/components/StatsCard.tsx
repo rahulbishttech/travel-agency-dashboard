@@ -20,12 +20,13 @@ const StatsCard = ({ headerTitle, total, lastMonthCount, currentMonthCount }: St
                             <figcaption className={cn('text-sm font-medium', isDecrement ? 'text-red-500' : 'text-green-700')}>
                                 {Math.round(percentage)}%
                             </figcaption>
+                            <p className="text-sm font-medium text-gray-100 truncate">vs last month</p>
                         </figure>
-
                     </div>
-
                 </div>
+                <img src={`/assets/icons/${isDecrement ? "decrement.svg" : "increment.svg"}`} className="w-full h-full md:h-32 xl:h-full xl:w-32 " alt="trend graph" />
             </div>
+
         </article>
     )
 }

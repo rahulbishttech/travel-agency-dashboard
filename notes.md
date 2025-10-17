@@ -55,10 +55,11 @@
     - in index.d.ts, i used declare keyword (declare keyword ke wajah we can use this type in whole application without import / global type declaration) 
 - same do it for TripCard & export both components from components -> index.ts
 - make dashboardStats dummy data obj & destructure it and pass them as props and recieve the props in their
-  respective component file
+  respective components file (StatsCard.tsx & TripCard.tsx)
+    - copy all the dummy data from dashboard and all users from descp link and paste it in constants -> index.ts
+    - export all with export keyword and import them in dashboard 
+    
 - 
-
-
 
 
 Annotations Explainations:
